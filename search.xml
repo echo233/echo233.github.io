@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[eclipse快捷键]]></title>
+    <url>%2F2019%2F02%2F26%2Feclipse%E5%BF%AB%E6%8D%B7%E9%94%AE%2F</url>
+    <content type="text"><![CDATA[Ctrl+shift+f：格式化代码块编辑 alt+shift +a变大写 ctrl+shift+x变小写 ctrl+shift+y向下复制一行 alt+ctrl+↓向下添加一个空行 shift + enter向上添加一个空行 ctrl+shift + enter删除一行 选中行 ctrl+d注释或者去掉注释 ctrl+/向下移动一行 alt + ↓linux]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>快捷键</tag>
+        <tag>eclipse</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[linux]]></title>
+    <url>%2F2019%2F02%2F26%2Flinux%2F</url>
+    <content type="text"><![CDATA[项目打包服务器：172.16.5.129703项目脚本目录：/run/build/703-trunk-20161228打包某一个或某几个项目：sh build_batch.sh wx-support rdfx打包全部：sh build_batch.sh把打好的包scp到相应服务器目录：/run/deploy_wars/sh /run/web_install/deploy/deploy.sh /run/deploy_wars/20190120190105 日志位置：/run/logstail -fn 500 yqbg.log重启业务系统-查看tomcat进程：ps -ef | grep tomcat重启业务系统-杀掉tomcat进程：kill -9 进程号启动tomcat：sh /run/apache-tomcat-7.0.57/bin/startup.sh 172.16.7.201./redis-cli -h 172.16.7.201 -a runwxb1024cd /run/redis-3.2.11/src/]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>导航</tag>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2019%2F02%2F25%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. 你好Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>
