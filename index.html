@@ -319,10 +319,10 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://echo233.github.io/2019/02/25/Linux/">
+    <link itemprop="mainEntityOfPage" href="https://echo233.github.io/2019/02/26/eclipse快捷键/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="echo233">
+      <meta itemprop="name" content="暄染">
       <meta itemprop="description" content>
       <meta itemprop="image" content="/images/touxiang.jpg">
     </span>
@@ -339,7 +339,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/02/25/Linux/" class="post-title-link" itemprop="url">未命名</a>
+                <a href="/2019/02/26/eclipse快捷键/" class="post-title-link" itemprop="url">eclipse快捷键</a>
               
             
           </h1>
@@ -364,7 +364,7 @@
                 
               
 
-              <time title="创建时间：2019-02-25 17:20:52 / 修改时间：17:21:47" itemprop="dateCreated datePublished" datetime="2019-02-25T17:20:52+08:00">2019-02-25</time>
+              <time title="创建时间：2019-02-26 17:01:03 / 修改时间：17:02:55" itemprop="dateCreated datePublished" datetime="2019-02-26T17:01:03+08:00">2019-02-26</time>
             
 
             
@@ -374,6 +374,24 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -405,59 +423,190 @@
       
         
           
-            <h1 id="Java各种零碎知识"><a href="#Java各种零碎知识" class="headerlink" title="Java各种零碎知识"></a>Java各种零碎知识</h1><p><a href="https://blog.csdn.net/larger5/article/details/79325999" target="_blank" rel="noopener">https://blog.csdn.net/larger5/article/details/79325999</a><br><a href="https://www.cnblogs.com/Fndroid/p/6105482.html#top" target="_blank" rel="noopener">https://www.cnblogs.com/Fndroid/p/6105482.html#top</a></p>
-<h2 id="一、restful"><a href="#一、restful" class="headerlink" title="一、restful"></a>一、restful</h2><ul>
-<li>restful：representational State Transfer(可重新表达的状态迁移)，restful是一种设计风格。</li>
-<li>所有的东西都是<strong>资源</strong>，所有的操作都是对资源的增删改查进行操作的（也就是url的action）</li>
-<li>对资源的增删改查对应URL的操作就是post，delete，put,get.</li>
-<li>所有的操作都应该是无状态的，也就是不使用session。<h2 id="二、springboot"><a href="#二、springboot" class="headerlink" title="二、springboot"></a>二、springboot</h2></li>
-<li>大量使用注解，减少配置，无需配置xml</li>
-<li>自带嵌入式web服务器，不再需要外部的tomcat这些。</li>
-<li>系统监控的功能<h3 id="三、maven（见图）"><a href="#三、maven（见图）" class="headerlink" title="三、maven（见图）"></a>三、maven（见图）</h3></li>
-<li>maven的目录结构</li>
-<li>maven的基本命令<h3 id="四、yml"><a href="#四、yml" class="headerlink" title="四、yml"></a>四、yml</h3>yml是一种配置文件，靠缩进去分层次。  <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  jackson:</span></span><br><span class="line"><span class="attr">    date-format:</span> <span class="string">yyyy-MM-dd</span></span><br><span class="line"><span class="attr">    time-zone:</span> <span class="string">GMT+8</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>当有值的时候，记得要加<strong>空格</strong></p>
-<h2 id="五、热部署"><a href="#五、热部署" class="headerlink" title="五、热部署"></a>五、热部署</h2><p>pom文件中导入<em>spring-boot-devtools</em>依赖。eclipse保存后会自动编译运行。</p>
-<h2 id="六、日志"><a href="#六、日志" class="headerlink" title="六、日志"></a>六、日志</h2><ul>
-<li>在配置文件中使用</li>
-<li>new log对象于当前类<h2 id="七、单一"><a href="#七、单一" class="headerlink" title="七、单一"></a>七、单一</h2>作用于方法上的getMapping与作用于类上的<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@GetMapping</span>(<span class="string">"/&#123;id&#125;"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> TVSeriesDto <span class="title">getOne</span><span class="params">(@PathVariable <span class="keyword">int</span> id)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (log.isTraceEnabled())&#123;</span><br><span class="line">            log.trace(<span class="string">"getOne"</span> + id);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (id == <span class="number">101</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> createPoi();</span><br><span class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span> (id == <span class="number">102</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> createWestWorld();</span><br><span class="line">        &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> ResourceNotFoundException();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="客户端数据的校验"><a href="#客户端数据的校验" class="headerlink" title="客户端数据的校验"></a>客户端数据的校验</h2><p>jsr标准。在后台对于数据进行校验。<br>约束规则对子类也适用  </p>
-<h2 id="层次"><a href="#层次" class="headerlink" title="层次"></a>层次</h2><ul>
-<li>@Controller @RestController</li>
-<li>@Service</li>
-<li>@Repository</li>
-<li>@Component<br><img src="D:/笔记/基础知识/层次结构.jpg" alt><h4 id="按功能分包（pbf-vs-按层次分包（pbl"><a href="#按功能分包（pbf-vs-按层次分包（pbl" class="headerlink" title="按功能分包（pbf) vs 按层次分包（pbl)"></a>按功能分包（pbf) vs 按层次分包（pbl)</h4>前者更加符合微服务的特性，后者更加有条理  <h2 id="不同层次的数据传输"><a href="#不同层次的数据传输" class="headerlink" title="不同层次的数据传输"></a>不同层次的数据传输</h2>以下是简单的带有属性的对象</li>
-<li>PO（persistant object): 持久对象（数据访问层</li>
-<li>DTO(data transfer object):数据传输对象（</li>
-<li>VO(value object或者view object) :</li>
-<li>POJO(pure old javaobject或者plain ordinary java object）:<br>以下是复杂的东西</li>
-<li>DO（domain object ），BO（business object）:处理业务逻辑</li>
-<li>DAO（data access object）:  </li>
-</ul>
-<p><strong><em>JavaBean</em></strong>:</p>
-<ul>
-<li>有一个无参的构造方法</li>
-<li>属性private，且可以通过get，set，is访问</li>
-<li>可序列化，实现serializable接口  <h4 id="POJO-vs-Javabean"><a href="#POJO-vs-Javabean" class="headerlink" title="POJO vs Javabean"></a>POJO <em>vs</em> Javabean</h4></li>
-<li>pojo比Javabean更简单，pojo严格遵守简单对象的概念，Javabean往往会封装一些简单的逻辑</li>
-<li>pojo主要用于数据的临时传输，它只能装载数据，不能处理业务逻辑<br><img src="D:/笔记/基础知识/开发流程.png" alt></li>
-</ul>
-<h2 id="springboot一些注解"><a href="#springboot一些注解" class="headerlink" title="springboot一些注解"></a>springboot一些注解</h2><p>@GetMapping是一个组合注解，是@RequestMapping(method=RequestMethod.GET)的缩写，<br>该注解将HTTP GET映射到特定的处理方法上。<br><strong><em>@RequestMapping(“/fileUpload”)</em></strong>就是通过localhost：8080/fileUpload路径进行访问，其映射方法名可自定义，不过该方法返回的页面名称要与项目中相对应的页面名称一致。</p>
-<ul>
-<li>另外form表单中，<strong>method</strong>中的action会映射到后台方法去执行（后台方法名称随意，不过相对应的路径需要一致。</li>
-<li>@RequestMapping是一个通用的注解，支持所有的HTTP请求，能接受get，post，head等请求。当前台调用controller处理数据时，告诉控制器怎样操作</li>
-<li>添加倾向于使用@PostMapping，更新偏向于使用@PutMapping请求。都是向服务器提交信息的。</li>
-<li>@Controller用来相应页面，表示当前的类为控制器</li>
-<li>@RestController是ResponseBody和@Controller的结合，<strong><em>表示当前类是控制器且返回的是一组数据，而不是页面</em></strong></li>
-<li>@Autowired作用是将其他的接口和类引入，用这个注解，其他接口或类的方法就可以直接调用了。</li>
-<li>@GetMapping,@PostMapping,@PutMapping,@DeleteMapping,分别为查询URL映射，增加URL映射，修改URL映射，删除URL映射。</li>
-</ul>
+            <p>
+              Ctrl+shift+f：格式化代码块编辑 alt+shift +a变大写 ctrl+shift+x变小写 ctrl+shift+y向下复制一行   alt+ctrl+↓向下添加一个空行 shift + enter向上添加一个空行 ctrl+shift + enter删除一行 选中行  ctrl+d
+              ...
+            </p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/02/26/eclipse快捷键/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://echo233.github.io/2019/02/26/linux/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="暄染">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/touxiang.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="echo233">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/02/26/linux/" class="post-title-link" itemprop="url">linux</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-02-26 16:44:54 / 修改时间：16:49:24" itemprop="dateCreated datePublished" datetime="2019-02-26T16:44:54+08:00">2019-02-26</time>
+            
+
+            
+              
+
+              
+            
+          </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/linux/" itemprop="url" rel="index"><span itemprop="name">linux</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>
+              项目打包服务器：172.16.5.129703项目脚本目录：/run/build/703-trunk-20161228打包某一个或某几个项目：sh build_batch.sh wx-support rdfx打包全部：sh build_batch.sh把打好的包scp到相应服务器目录：/run/de
+              ...
+            </p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/02/26/linux/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -515,7 +664,7 @@
     <link itemprop="mainEntityOfPage" href="https://echo233.github.io/2019/02/25/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="echo233">
+      <meta itemprop="name" content="暄染">
       <meta itemprop="description" content>
       <meta itemprop="image" content="/images/touxiang.jpg">
     </span>
@@ -598,17 +747,19 @@
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="你好"><a href="#你好" class="headerlink" title="你好"></a>你好</h2><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+            <p>
+              Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/02/25/hello-world/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -680,9 +831,9 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/images/touxiang.jpg" alt="echo233">
+              <img class="site-author-image" itemprop="image" src="/images/touxiang.jpg" alt="暄染">
             
-              <p class="site-author-name" itemprop="name">echo233</p>
+              <p class="site-author-name" itemprop="name">暄染</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
@@ -693,20 +844,69 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
               
 
               
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
 
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
               
             </nav>
           
 
           
 
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/echo233" title="GitHub &rarr; https://github.com/echo233" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+            </div>
           
 
           
@@ -740,7 +940,7 @@
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">echo233</span>
+  <span class="author" itemprop="copyrightHolder">暄染</span>
 
   
 
@@ -811,6 +1011,9 @@
 
 
 
+  
+  
+
 
 
 
@@ -829,6 +1032,12 @@
 
   
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/three/three.min.js"></script>
+
+  
+  <script src="/lib/three/three-waves.min.js"></script>
 
 
   
